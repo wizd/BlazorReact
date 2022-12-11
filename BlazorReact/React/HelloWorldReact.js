@@ -24,7 +24,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
 const react_dom_1 = __importDefault(require("react-dom"));
-const Component = () => React.createElement("p", null, "Hello from React!");
+const Component = () => React.createElement("p", null, "Hello w0rld from React!");
 function hello(renderElement) {
     react_dom_1.default.render(React.createElement(Component, null), renderElement);
 }
