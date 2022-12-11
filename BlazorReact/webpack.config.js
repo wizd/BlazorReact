@@ -7,7 +7,8 @@ module.exports = {
     mode: "development",
     output: {
         filename: "app.js",
-        path: path.resolve(__dirname, "./wwwroot/scripts")
+        path: path.resolve(__dirname, "./wwwroot/scripts"),
+        library: "bruic",
     },
     module: {
         rules: [

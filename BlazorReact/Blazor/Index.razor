@@ -13,7 +13,7 @@ Welcome to your new app.
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if(firstRender) await JsWindow.InvokeVoidAsync("renderReact", _react);
+        if (firstRender) await JsWindow.InvokeVoidAsync("bruic.hello", _react);
     }
 
 }

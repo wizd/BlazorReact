@@ -1,3 +1,4 @@
+var bruic =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -118,14 +119,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.hello = void 0;
 const React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 const react_dom_1 = __importDefault(__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js"));
-const Component = () => React.createElement("p", null, "Hello w0rld from React!");
+const Component = () => React.createElement("p", null, "Hello World 2 from React!");
 function hello(renderElement) {
     react_dom_1.default.render(React.createElement(Component, null), renderElement);
 }
-exports.default = hello;
-window.renderReact = hello;
+exports.hello = hello;
 
 
 /***/ }),
