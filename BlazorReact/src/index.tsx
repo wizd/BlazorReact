@@ -1,17 +1,17 @@
 ﻿import * as React from 'react';
 import { createRoot } from 'react-dom/client';
 
-import LoginComponent from "./LoginComponent";
-import Home from "./Home";
+import CreateNewWallet from "./CreateNewWallet";
+import OpenWallet from "./OpenWallet";
 
 export * from "./HelloWorldReact";
 
-export function login(renderElement: HTMLElement) {
+export function openwallet(renderElement: HTMLElement) {
     const root = createRoot(renderElement);
-    root.render(<LoginComponent />);
+    root.render(<OpenWallet />);
 }
 
-export function home(renderElement: HTMLElement) {
+export function createwallet(renderElement: HTMLElement) {
     const root = createRoot(renderElement);
-    root.render(<Home />);
+    root.render(<CreateNewWallet />);
 }

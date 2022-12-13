@@ -29,20 +29,20 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.home = exports.login = void 0;
+exports.createwallet = exports.openwallet = void 0;
 const React = __importStar(require("react"));
 const client_1 = require("react-dom/client");
-const LoginComponent_1 = __importDefault(require("./LoginComponent"));
-const Home_1 = __importDefault(require("./Home"));
+const CreateNewWallet_1 = __importDefault(require("./CreateNewWallet"));
+const OpenWallet_1 = __importDefault(require("./OpenWallet"));
 __exportStar(require("./HelloWorldReact"), exports);
-function login(renderElement) {
+function openwallet(renderElement) {
     const root = (0, client_1.createRoot)(renderElement);
-    root.render(React.createElement(LoginComponent_1.default, null));
+    root.render(React.createElement(OpenWallet_1.default, null));
 }
-exports.login = login;
-function home(renderElement) {
+exports.openwallet = openwallet;
+function createwallet(renderElement) {
     const root = (0, client_1.createRoot)(renderElement);
-    root.render(React.createElement(Home_1.default, null));
+    root.render(React.createElement(CreateNewWallet_1.default, null));
 }
-exports.home = home;
+exports.createwallet = createwallet;
 //# sourceMappingURL=index.js.map

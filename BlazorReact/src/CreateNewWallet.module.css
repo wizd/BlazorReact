@@ -1,0 +1,119 @@
+.rectangleDiv {
+  position: absolute;
+  top: 104px;
+  left: 5px;
+  width: 365px;
+  height: 451px;
+}
+.signUp {
+  position: absolute;
+  top: 125px;
+  left: 82px;
+  letter-spacing: 0.41px;
+  line-height: 41px;
+  display: inline-block;
+}
+.box2,
+.box21,
+.box2Copy,
+.box2Copy2 {
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 245px;
+  left: 16px;
+}
+.box21,
+.box2Copy,
+.box2Copy2 {
+  top: 464px;
+}
+.box21,
+.box2Copy2 {
+  top: 318px;
+}
+.box2Copy2 {
+  top: 391px;
+}
+.groupDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
+}
+.entryTab {
+  position: absolute;
+  top: 562px;
+  left: 16px;
+  width: 343px;
+  height: 80px;
+}
+.buttonShape,
+.controlsButtonsBigActi {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.controlsButtonsBigActi {
+  width: calc(100% - 174.35px);
+  left: 174.35px;
+}
+.buttonShape {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-brown);
+  width: 48.47%;
+  left: 51.53%;
+  border-radius: var(--br-md);
+}
+.label {
+  position: absolute;
+  width: 44.33%;
+  top: calc(50% - 11px);
+  left: 0;
+  font-size: var(--font-size-xs);
+  letter-spacing: -0.36px;
+  font-family: var(--font-sfprotext-semibold);
+  color: #080808;
+  text-align: center;
+  display: inline-block;
+}
+.buttonShape2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 575px;
+  left: 20.65px;
+  width: 338.35px;
+  height: 50px;
+}
+.signUp1 {
+  position: absolute;
+  top: 591px;
+  left: 251px;
+  font-size: var(--font-size-sm);
+  letter-spacing: -0.27px;
+  line-height: 18px;
+  font-family: var(--font-sfprotext-semibold);
+  color: var(--color-white);
+  display: inline-block;
+}
+.createNewWallet {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 812px;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-brown);
+  font-family: var(--font-sfprodisplay-bold);
+}

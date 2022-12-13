@@ -1,0 +1,166 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.rectangleDiv {
+  top: 174px;
+  left: 5px;
+  width: 365px;
+  height: 451px;
+}
+.box2,
+.rectangleDiv,
+.signIn {
+  position: absolute;
+}
+.signIn {
+  top: 125px;
+  left: 92px;
+  letter-spacing: 0.41px;
+  line-height: 41px;
+  font-family: var(--font-sfprodisplay-bold);
+  display: inline-block;
+}
+.box2 {
+  border: 0;
+  background-color: transparent;
+  top: 391px;
+  left: 42px;
+}
+.forgotPasswordCopy2 {
+  position: absolute;
+  top: 473px;
+  left: 136.5px;
+  font-size: 12px;
+  letter-spacing: -0.07px;
+  color: rgba(127, 133, 146, 0.5);
+  display: inline-block;
+}
+.groupDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
+}
+.entryTab {
+  position: absolute;
+  top: 562px;
+  left: 16px;
+  width: 343px;
+  height: 80px;
+}
+.buttonShape,
+.controlsButtonsBigActi {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.buttonShape {
+  border-radius: var(--br-md);
+  background-color: var(--color-brown);
+}
+.label {
+  position: absolute;
+  width: 91.46%;
+  top: calc(50% - 10px);
+  left: 4.57%;
+  font-size: var(--font-size-sm);
+  letter-spacing: -0.41px;
+  line-height: 22px;
+  font-family: var(--font-sfprotext-semibold);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+}
+.buttonShape2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 575px;
+  left: 21px;
+  width: 164px;
+  height: 50px;
+  opacity: 0;
+}
+.buttonShape2.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in;
+}
+.accountCard2,
+.signUp {
+  position: absolute;
+  display: inline-block;
+}
+.signUp {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 594px;
+  left: 259px;
+  font-size: var(--font-size-xs);
+  letter-spacing: -0.24px;
+  line-height: 18px;
+  font-family: var(--font-sfprotext-semibold);
+  color: #1b2749;
+  text-align: center;
+}
+.accountCard2 {
+  top: calc(50% + 42.34px);
+  left: calc(50% - 38px);
+  letter-spacing: 0.07px;
+  line-height: 13px;
+}
+.walletIcon {
+  position: absolute;
+  height: 39.6%;
+  width: 39.6%;
+  top: 19.8%;
+  right: 29.7%;
+  bottom: 40.59%;
+  left: 30.69%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.accountCard1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.accountCard {
+  position: absolute;
+  top: 194.5px;
+  left: 104.25px;
+  width: 166.5px;
+  height: 166.5px;
+  font-size: 11px;
+  color: #7f8592;
+}
+.openWallet {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 812px;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-brown);
+  font-family: var(--font-sfprotext-medium);
+}

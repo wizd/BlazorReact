@@ -9,9 +9,9 @@
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (true)
+        if (firstRender)
         {
-            await JsWindow.InvokeVoidAsync("bruic.home", _react);
+            await JsWindow.InvokeVoidAsync("bruic.openwallet", _react);
         }
 
         await base.OnAfterRenderAsync(firstRender);

@@ -1,15 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto-Medium:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=SFProText-Semibold:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto-Bold:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto-Regular:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=SFProDisplay-Bold:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=SFProText-Medium:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=SFProText-Bold:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat-SemiBold:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat-Medium:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins-Medium:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins-Regular:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins-Bold:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SFProText-Semibold:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 body {
@@ -18,48 +9,20 @@ body {
 }
 :root {
   /* fonts */
-  --font-roboto-medium: Roboto-Medium;
-  --font-roboto-regular: Roboto-Regular;
-  --font-roboto-bold: Roboto-Bold;
-  --font-sfprotext-semibold: SFProText-Semibold;
   --font-sfprotext-medium: SFProText-Medium;
-  --font-sfprotext-bold: SFProText-Bold;
+  --font-sfprotext-semibold: SFProText-Semibold;
   --font-sfprodisplay-bold: SFProDisplay-Bold;
-  --font-montserrat-medium: Montserrat-Medium;
-  --font-montserrat-semibold: Montserrat-SemiBold;
-  --font-poppins-regular: Poppins-Regular;
-  --font-poppins-bold: Poppins-Bold;
-  --font-poppins-medium: Poppins-Medium;
 
   /* font sizes */
-  --font-size-xs: 12px;
-  --font-size-sm: 15px;
-  --font-size-base: 16px;
-  --font-size-lg: 17px;
-  --font-size-xl: 20px;
+  --font-size-xs: 15px;
+  --font-size-sm: 17px;
+  --font-size-base: 34px;
 
   /* Colors */
   --color-white: #fff;
-  --color-gray-100: #a6a5a5;
-  --color-gray-200: #9d9d9d;
-  --color-gray-300: #979797;
-  --color-gray-400: #4a90e2;
-  --color-gray-500: rgba(127, 133, 146, 0.5);
-  --color-gray-600: rgba(0, 0, 0, 0);
-  --color-brown-100: #fa7268;
-  --color-indigo-100: #272459;
-  --color-black: #000;
+  --color-brown: #fa7268;
 
   /* border radiuses */
-  --br-4xs: 0.5px;
-  --br-3xs: 1.33px;
-  --br-2xs: 2px;
-  --br-xs: 2.67px;
-  --br-sm: 10px;
-  --br-md: 15px;
-  --br-lg: 16px;
-  --br-xl: 20px;
-  --br-2xl: 25px;
-  --br-3xl: 30px;
-  --br-4xl: 100px;
+  --br-sm: 8px;
+  --br-md: 25px;
 }
