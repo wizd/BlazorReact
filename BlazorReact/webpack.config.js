@@ -2,7 +2,7 @@
 const fs = require("fs");
 
 module.exports = {
-    entry: () => fs.readdirSync("./React/").filter(f => f.endsWith(".js")).map(f => `./React/${f}`),
+    entry: () => fs.readdirSync("./src/").filter(f => f.endsWith(".js")).map(f => `./src/${f}`),
     devtool: "source-map",
     mode: "development",
     output: {

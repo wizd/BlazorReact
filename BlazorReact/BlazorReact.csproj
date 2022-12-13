@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="React\HelloWorldReact.tsx" />
+    <None Remove="src\HelloWorldReact.tsx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,10 +20,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="System.Net.Http.Json" Version="7.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <TypeScriptCompile Include="React\HelloWorldReact.tsx" />
   </ItemGroup>
 
   <PropertyGroup>
