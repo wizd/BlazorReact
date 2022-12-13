@@ -22,16 +22,14 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.hello = void 0;
 const React = __importStar(require("react"));
-const react_dom_1 = __importDefault(require("react-dom"));
+const client_1 = require("react-dom/client");
 const Component = () => React.createElement("p", null, "Hello World 2 from React!");
 function hello(renderElement) {
-    react_dom_1.default.render(React.createElement(Component, null), renderElement);
+    const root = (0, client_1.createRoot)(renderElement);
+    root.render(React.createElement(Component, null));
 }
 exports.hello = hello;
 //# sourceMappingURL=HelloWorldReact.js.map

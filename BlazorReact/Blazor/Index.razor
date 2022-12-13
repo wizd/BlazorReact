@@ -7,13 +7,21 @@ Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
 
+<div id="login" @ref="_react2">this is where login component should be</div>
+
 @functions
 {
-    private ElementReference _react;
+    private ElementReference _react, _react2;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (firstRender) await JsWindow.InvokeVoidAsync("bruic.hello", _react);
+        if (true)
+        {
+            await JsWindow.InvokeVoidAsync("bruic.hello", _react);
+            await JsWindow.InvokeVoidAsync("bruic.login", _react2);
+        }
+
+        await base.OnAfterRenderAsync(firstRender);
     }
 
 }

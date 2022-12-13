@@ -1,10 +1,11 @@
 ﻿import * as React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 const Component = () => <p>Hello World 2 from React!</p>;
 
 export function hello(renderElement: HTMLElement) {
-    ReactDOM.render(<Component />, renderElement);
+    const root = createRoot(renderElement);
+    root.render(<Component />);
 }
 
 //(window as any).renderReact = hello;
