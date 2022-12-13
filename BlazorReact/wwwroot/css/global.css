@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=SFProDisplay-Bold:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SFProText-Semibold:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SFProText-Medium:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SFProText-Bold:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat-SemiBold:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat-Medium:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins-Medium:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins-Regular:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins-Bold:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-sfprotext-semibold: SFProText-Semibold;
+  --font-sfprotext-medium: SFProText-Medium;
+  --font-sfprotext-bold: SFProText-Bold;
+  --font-sfprodisplay-bold: SFProDisplay-Bold;
+  --font-montserrat-medium: Montserrat-Medium;
+  --font-montserrat-semibold: Montserrat-SemiBold;
+  --font-poppins-regular: Poppins-Regular;
+  --font-poppins-bold: Poppins-Bold;
+  --font-poppins-medium: Poppins-Medium;
+
+  /* font sizes */
+  --font-size-base: 12px;
+  --font-size-lg: 15px;
+  --font-size-xl: 16px;
+  --font-size-2xl: 17px;
+  --font-size-3xl: 20px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-brown-100: #fa7268;
+  --color-gray-100: #979797;
+  --color-gray-200: rgba(127, 133, 146, 0.5);
+  --color-indigo-100: #272459;
+  --color-black: #000;
+
+  /* border radiuses */
+  --br-3xs: 1.33px;
+  --br-2xs: 2.67px;
+  --br-xs: 10px;
+  --br-sm: 15px;
+  --br-md: 16px;
+  --br-lg: 20px;
+  --br-xl: 25px;
+  --br-2xl: 30px;
+  --br-3xl: 100px;
+}
