@@ -17,7 +17,7 @@ const LoginComponent = () => {
         react_1.default.createElement("div", { className: "forgot-password" }, "Forgot password?"),
         react_1.default.createElement("button", { className: "group-button" },
             react_1.default.createElement("div", { className: "controls-buttons-mini-bl" }),
-            react_1.default.createElement("img", { className: "iconglyphnext", alt: "", src: "../iconglyphnext.svg" }),
+            react_1.default.createElement("img", { className: "iconglyphnext", alt: "", src: "/imgs/iconglyphnext.svg" }),
             react_1.default.createElement("div", { className: "sign-in" }, "Sign In"))));
 };
 exports.default = LoginComponent;

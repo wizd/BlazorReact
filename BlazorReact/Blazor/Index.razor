@@ -1,24 +1,17 @@
 ﻿@page "/"
 @inject IJSRuntime JsWindow;
 
-<h1>Hello, world!</h1>
-<div @ref="_react">this is where react should be</div>
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
-
-<div id="login" @ref="_react2">this is where login component should be</div>
+<div @ref="_react" />
 
 @functions
 {
-    private ElementReference _react, _react2;
+    private ElementReference _react;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (true)
         {
-            await JsWindow.InvokeVoidAsync("bruic.hello", _react);
-            await JsWindow.InvokeVoidAsync("bruic.login", _react2);
+            await JsWindow.InvokeVoidAsync("bruic.home", _react);
         }
 
         await base.OnAfterRenderAsync(firstRender);

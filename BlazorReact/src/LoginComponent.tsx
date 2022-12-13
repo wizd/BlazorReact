@@ -49,7 +49,7 @@ const LoginComponent: FunctionComponent = () => {
             <div className="forgot-password">Forgot password?</div>
             <button className="group-button">
                 <div className="controls-buttons-mini-bl" />
-                <img className="iconglyphnext" alt="" src="../iconglyphnext.svg" />
+                <img className="iconglyphnext" alt="" src="/imgs/iconglyphnext.svg" />
                 <div className="sign-in">Sign In</div>
             </button>
         </div>
