@@ -9,8 +9,8 @@ body {
 }
 :root {
   /* fonts */
-  --font-sfprotext-medium: SFProText-Medium;
   --font-sfprotext-semibold: SFProText-Semibold;
+  --font-sfprotext-medium: SFProText-Medium;
   --font-sfprodisplay-bold: SFProDisplay-Bold;
 
   /* font sizes */

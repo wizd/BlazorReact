@@ -1,19 +1,4 @@
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.rectangle-div {
-  top: 174px;
-  left: 5px;
-  width: 365px;
-  height: 451px;
-}
 .box-2,
-.rectangle-div,
 .sign-in {
   position: absolute;
 }
@@ -57,48 +42,6 @@
   width: 343px;
   height: 80px;
 }
-.button-shape,
-.controls-buttons-big-acti {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.button-shape {
-  border-radius: var(--br-md);
-  background-color: var(--color-brown);
-}
-.label {
-  position: absolute;
-  width: 91.46%;
-  top: calc(50% - 10px);
-  left: 4.57%;
-  font-size: var(--font-size-sm);
-  letter-spacing: -0.41px;
-  line-height: 22px;
-  font-family: var(--font-sfprotext-semibold);
-  color: var(--color-white);
-  text-align: center;
-  display: inline-block;
-}
-.button-shape-2 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 575px;
-  left: 21px;
-  width: 164px;
-  height: 50px;
-  opacity: 0;
-}
-.button-shape-2.animate {
-  animation: 1s ease 0s 1 normal forwards fade-in;
-}
 .account-card2,
 .sign-up {
   position: absolute;
@@ -112,7 +55,6 @@
   line-height: 18px;
   font-family: var(--font-sfprotext-semibold);
   color: #1b2749;
-  cursor: pointer;
 }
 .account-card2 {
   top: calc(50% + 42.34px);
@@ -149,6 +91,30 @@
   height: 166.5px;
   font-size: 11px;
   color: #7f8592;
+}
+.button-shape {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-brown);
+  position: absolute;
+  top: 578px;
+  left: 24px;
+  border-radius: var(--br-md);
+  width: 164px;
+  height: 50px;
+}
+.label {
+  position: absolute;
+  top: 594px;
+  left: 29.75px;
+  font-size: var(--font-size-sm);
+  letter-spacing: -0.41px;
+  line-height: 22px;
+  font-family: var(--font-sfprotext-semibold);
+  color: #fdfdfd;
+  display: inline-block;
+  width: 150px;
 }
 .open-wallet {
   position: relative;
