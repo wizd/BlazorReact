@@ -1,8 +1,9 @@
-﻿const path = require("path");
+﻿var glob = require('glob');
+const path = require("path");
 const fs = require("fs");
 
 module.exports = {
-    entry: () => fs.readdirSync("./src/").filter(f => f.endsWith(".js")).map(f => `./src/${f}`),
+    entry: './src/index.js',
     devtool: "source-map",
     mode: "development",
     output: {
@@ -16,7 +17,14 @@ module.exports = {
                 test: /\.js$/,
                 enforce: "pre",
                 use: ["source-map-loader"]
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
             }
         ]
-    }
+    },
 }
