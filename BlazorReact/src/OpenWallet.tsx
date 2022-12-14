@@ -1,16 +1,80 @@
 import React from 'react';
-import { FunctionComponent } from "react";
-import { TextField, InputAdornment, Icon, IconButton } from "@mui/material";
-import WalletSelect from "./WalletSelect";
+import { FunctionComponent, useState } from "react";
+import {
+  Button,
+  Menu,
+  MenuItem,
+  TextField,
+  Input,
+  Icon,
+  InputAdornment,
+  IconButton,
+} from "@mui/material";
 import "./OpenWallet.css";
 
 const OpenWallet: FunctionComponent = () => {
+  const [
+    dropdownButtonSimpleTextOAnchorEl,
+    setDropdownButtonSimpleTextOAnchorEl,
+  ] = useState<HTMLElement | null>(null);
+  const [
+    dropdownButtonSimpleTextOSelectedIndex,
+    setDropdownButtonSimpleTextOSelectedIndex,
+  ] = useState<number>(-1);
+
+  const dropdownButtonSimpleTextOOpen = Boolean(
+    dropdownButtonSimpleTextOAnchorEl
+  );
+  const handleDropdownButtonSimpleTextOClick = (
+    event: React.MouseEvent<HTMLElement>
+  ) => {
+    setDropdownButtonSimpleTextOAnchorEl(event.currentTarget);
+  };
+  const handleDropdownButtonSimpleTextOMenuItemClick = (index: number) => {
+    setDropdownButtonSimpleTextOSelectedIndex(index);
+    setDropdownButtonSimpleTextOAnchorEl(null);
+  };
+  const handleDropdownButtonSimpleTextOClose = () => {
+    setDropdownButtonSimpleTextOAnchorEl(null);
+  };
+
   return (
     <div className="open-wallet">
-      <div className="sign-in">Open Wallet</div>
+      <b className="sign-in1">Open Wallet</b>
+      <img className="illus5-copy-icon" alt="" src="/imgs/illus5-copy.svg" />
+      <div>
+        <Button
+          id="button-Select Wallet"
+          aria-controls="menu-Select Wallet"
+          aria-haspopup="true"
+          aria-expanded={dropdownButtonSimpleTextOOpen ? "true" : undefined}
+          onClick={handleDropdownButtonSimpleTextOClick}
+          color="primary"
+        >
+          Select Wallet
+        </Button>
+        <Menu
+          anchorEl={dropdownButtonSimpleTextOAnchorEl}
+          open={dropdownButtonSimpleTextOOpen}
+          onClose={handleDropdownButtonSimpleTextOClose}
+        >
+          <MenuItem
+            selected={dropdownButtonSimpleTextOSelectedIndex === 0}
+            onClick={() => handleDropdownButtonSimpleTextOMenuItemClick(0)}
+          >
+            wallet a
+          </MenuItem>
+          <MenuItem
+            selected={dropdownButtonSimpleTextOSelectedIndex === 1}
+            onClick={() => handleDropdownButtonSimpleTextOMenuItemClick(1)}
+          >
+            walle b
+          </MenuItem>
+        </Menu>
+      </div>
       <TextField
-        className="box-2"
-        sx={{ width: 291 }}
+        className="box-22"
+        sx={{ width: 330 }}
         color="primary"
         variant="standard"
         type="password"
@@ -24,24 +88,19 @@ const OpenWallet: FunctionComponent = () => {
           ),
         }}
         label="Password"
+        placeholder="Placeholder"
         size="medium"
-        margin="normal"
+        margin="none"
         required
       />
-      <div className="forgot-password-copy-2">Forgot password?</div>
-      <div className="entrytab">
-        <div className="group-div" />
+      <button className="button-shape-21">
+        <div className="button-shape1" />
+        <div className="label1">Sign In</div>
+      </button>
+      <div className="frame-div">
+        <button className="sign-up1">Sign Up</button>
+        <button className="forgot-password-copy-2">Forgot password?</button>
       </div>
-      <div className="sign-up">Create</div>
-      <div className="account-card">
-        <div className="account-card1">
-          <WalletSelect />
-          <div className="account-card2">Default Wallet</div>
-          <img className="wallet-icon" alt="" src="/imgs/wallet.svg" />
-        </div>
-      </div>
-      <button className="button-shape" />
-      <div className="label">Open</div>
     </div>
   );
 };

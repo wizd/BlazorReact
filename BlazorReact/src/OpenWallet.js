@@ -4,28 +4,42 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
+const react_2 = require("react");
 const material_1 = require("@mui/material");
-const WalletSelect_1 = __importDefault(require("./WalletSelect"));
 require("./OpenWallet.css");
 const OpenWallet = () => {
+    const [dropdownButtonSimpleTextOAnchorEl, setDropdownButtonSimpleTextOAnchorEl,] = (0, react_2.useState)(null);
+    const [dropdownButtonSimpleTextOSelectedIndex, setDropdownButtonSimpleTextOSelectedIndex,] = (0, react_2.useState)(-1);
+    const dropdownButtonSimpleTextOOpen = Boolean(dropdownButtonSimpleTextOAnchorEl);
+    const handleDropdownButtonSimpleTextOClick = (event) => {
+        setDropdownButtonSimpleTextOAnchorEl(event.currentTarget);
+    };
+    const handleDropdownButtonSimpleTextOMenuItemClick = (index) => {
+        setDropdownButtonSimpleTextOSelectedIndex(index);
+        setDropdownButtonSimpleTextOAnchorEl(null);
+    };
+    const handleDropdownButtonSimpleTextOClose = () => {
+        setDropdownButtonSimpleTextOAnchorEl(null);
+    };
     return (react_1.default.createElement("div", { className: "open-wallet" },
-        react_1.default.createElement("div", { className: "sign-in" }, "Open Wallet"),
-        react_1.default.createElement(material_1.TextField, { className: "box-2", sx: { width: 291 }, color: "primary", variant: "standard", type: "password", InputProps: {
+        react_1.default.createElement("b", { className: "sign-in1" }, "Open Wallet"),
+        react_1.default.createElement("img", { className: "illus5-copy-icon", alt: "", src: "/imgs/illus5-copy.svg" }),
+        react_1.default.createElement("div", null,
+            react_1.default.createElement(material_1.Button, { id: "button-Select Wallet", "aria-controls": "menu-Select Wallet", "aria-haspopup": "true", "aria-expanded": dropdownButtonSimpleTextOOpen ? "true" : undefined, onClick: handleDropdownButtonSimpleTextOClick, color: "primary" }, "Select Wallet"),
+            react_1.default.createElement(material_1.Menu, { anchorEl: dropdownButtonSimpleTextOAnchorEl, open: dropdownButtonSimpleTextOOpen, onClose: handleDropdownButtonSimpleTextOClose },
+                react_1.default.createElement(material_1.MenuItem, { selected: dropdownButtonSimpleTextOSelectedIndex === 0, onClick: () => handleDropdownButtonSimpleTextOMenuItemClick(0) }, "wallet a"),
+                react_1.default.createElement(material_1.MenuItem, { selected: dropdownButtonSimpleTextOSelectedIndex === 1, onClick: () => handleDropdownButtonSimpleTextOMenuItemClick(1) }, "walle b"))),
+        react_1.default.createElement(material_1.TextField, { className: "box-22", sx: { width: 330 }, color: "primary", variant: "standard", type: "password", InputProps: {
                 endAdornment: (react_1.default.createElement(material_1.InputAdornment, { position: "end" },
                     react_1.default.createElement(material_1.IconButton, { "aria-label": "toggle password visibility" },
                         react_1.default.createElement(material_1.Icon, null, "visibility")))),
-            }, label: "Password", size: "medium", margin: "normal", required: true }),
-        react_1.default.createElement("div", { className: "forgot-password-copy-2" }, "Forgot password?"),
-        react_1.default.createElement("div", { className: "entrytab" },
-            react_1.default.createElement("div", { className: "group-div" })),
-        react_1.default.createElement("div", { className: "sign-up" }, "Create"),
-        react_1.default.createElement("div", { className: "account-card" },
-            react_1.default.createElement("div", { className: "account-card1" },
-                react_1.default.createElement(WalletSelect_1.default, null),
-                react_1.default.createElement("div", { className: "account-card2" }, "Default Wallet"),
-                react_1.default.createElement("img", { className: "wallet-icon", alt: "", src: "/imgs/wallet.svg" }))),
-        react_1.default.createElement("button", { className: "button-shape" }),
-        react_1.default.createElement("div", { className: "label" }, "Open")));
+            }, label: "Password", placeholder: "Placeholder", size: "medium", margin: "none", required: true }),
+        react_1.default.createElement("button", { className: "button-shape-21" },
+            react_1.default.createElement("div", { className: "button-shape1" }),
+            react_1.default.createElement("div", { className: "label1" }, "Sign In")),
+        react_1.default.createElement("div", { className: "frame-div" },
+            react_1.default.createElement("button", { className: "sign-up1" }, "Sign Up"),
+            react_1.default.createElement("button", { className: "forgot-password-copy-2" }, "Forgot password?"))));
 };
 exports.default = OpenWallet;
 //# sourceMappingURL=OpenWallet.js.map

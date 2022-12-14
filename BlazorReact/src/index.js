@@ -32,7 +32,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.createwallet = exports.openwallet = void 0;
 const React = __importStar(require("react"));
 const client_1 = require("react-dom/client");
-const CreateNewWallet_1 = __importDefault(require("./CreateNewWallet"));
+const CreateWallet_1 = __importDefault(require("./CreateWallet"));
 const OpenWallet_1 = __importDefault(require("./OpenWallet"));
 __exportStar(require("./HelloWorldReact"), exports);
 function openwallet(renderElement) {
@@ -42,7 +42,7 @@ function openwallet(renderElement) {
 exports.openwallet = openwallet;
 function createwallet(renderElement) {
     const root = (0, client_1.createRoot)(renderElement);
-    root.render(React.createElement(CreateNewWallet_1.default, null));
+    root.render(React.createElement(CreateWallet_1.default, null));
 }
 exports.createwallet = createwallet;
 //# sourceMappingURL=index.js.map
